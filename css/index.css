@@ -43,6 +43,22 @@ html {
 
   }
 
+.keterangan
+{  font-family: georgia;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 255px;
+    right: ;
+    left: 650px;
+    color: rgb(0, 0, 0);
+    text-shadow: -0.5px 0  rgb(255, 255, 255), 0 0.5px  rgb(255, 255, 255), 0.5px 0  rgb(255, 255, 255), 0 -0.5px  rgb(255, 255, 255);
+
+}
+
+
+
+
 .vapelogo {
     position : relative;
     top: 20px;
