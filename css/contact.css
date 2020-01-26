@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .container{
+    width: 100%;
+    margin: right;
+  }
+  
+  /* Header */
+  header{
+    background-color:rgb(61, 61, 61);
+  }
+  
+  nav a{
+    color: white;
+  }
+  
+  nav li{
+    display: inline-block;
+  }
+  
+  #brand{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navigation{
+    float: right;
+    padding: 23px 20px;
+  }
+  
+  nav li a:hover{
+    color: rgb(248, 115, 91);
+  }
+  
+  /* main section */
+  main{
+    background: url('/images/hubungikami.jpeg') no-repeat center center fixed;
+    Background-position: 0% 10%;
+    background-size: 100%;
+    text-align: 100px 100px;
+  }
+  .main-sec{
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+  }
+  .text1{
+    float: top;
+    padding-left: 30px;
+    color: rgb(252, 122, 0);
+  }
+  .text2{
+    float: top;
+    padding-left: 30px;
+    color: rgb(252, 122, 0);
+  }
+  
+  .adrs{
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+    justify-items: left;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;}
+
+.submis{
+    padding-left: 30px;}    
+
+button{
+    color: green;
+    position: relative;
+    top :;
+    left: 540px;
+    bottom: 90px;
+    height: 90px;
+    
+}
+#whatsappc{
+    padding-top: 17px;
+    padding-left: 20px;
+}
+
+/* footer */
+footer{
+    background: rgb(187, 187, 187);
+  
+  }
+  
+  .social{
+    text-align: center;
+  }
+  
+  .social img{
+    padding:40px 20px;
+    cursor: pointer;
+  }
+  .social img:hover{
+    transform: scale(1.2);
+  
+  }
