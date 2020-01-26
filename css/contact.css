@@ -3,15 +3,31 @@
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .zoom {
+    -ms-transform: scale(1.0);
+    -ms-transform-origin: 50% 0; /* IE */
+    -moz-transform: scale(1.0);
+    -moz-transform-origin: 50% 0 0;  /* Mozilla */ 
+    -webkit-transform: scale(1.0);
+    -webkit-transform-origin: 50% 0 0;  /* Chrome, Safari, Opera */
+ }
+
   a{
     text-decoration: none;
   }
   ul{
     list-style-type: none;
   }
+
+  .vapelogo{
+    border-radius: 50%;
+
+  }
+
   .container{
-    width: 100%;
-    margin: right;
+    width: 65%;
+    margin: auto;
   }
   
   /* Header */
@@ -42,66 +58,142 @@
   
   /* main section */
   main{
-    background: url('/images/hubungikami.jpeg') no-repeat center center fixed;
-    Background-position: 0% 10%;
-    background-size: 100%;
-    text-align: 100px 100px;
+    background: url('../img/homeimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
   }
   .main-sec{
-    padding-top: 17vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
   }
   .text1{
-    float: top;
-    padding-left: 30px;
-    color: rgb(252, 122, 0);
+    padding: 3px;
+    font-size: 60px;
+    color: rgb(255, 155, 210);
+    text-shadow: -1px 0  rgb(255, 255, 255), 0 1px  rgb(255, 255, 255), 1px 0  rgb(255, 255, 255), 0 -1px  rgb(255, 255, 255);
   }
   .text2{
-    float: top;
-    padding-left: 30px;
-    color: rgb(252, 122, 0);
+    padding: 2px;
+    font-size: 40px;
+    color: rgb(255, 155, 210);
+    text-shadow: -1px 0  rgb(255, 255, 255), 0 1px  rgb(255, 255, 255), 1px 0  rgb(255, 255, 255), 0 -1px  rgb(255, 255, 255);
   }
   
-  .adrs{
-    display: grid ;
-    grid-template-columns: auto auto auto auto;
-    justify-items: left;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 50px;}
-
-.submis{
-    padding-left: 30px;}    
-
-button{
-    color: green;
-    position: relative;
-    top :;
-    left: 540px;
-    bottom: 90px;
-    height: 90px;
+  /* card section */
+  .showcase{
+    background-color:rgb(238, 238, 238) ;
     
-}
-#whatsappc{
-    padding-top: 17px;
-    padding-left: 20px;
-}
-
-/* footer */
-footer{
-    background: rgb(187, 187, 187);
-  
-  }
-  
-  .social{
+    }
+  .search{
+    padding: 20px;
     text-align: center;
   }
   
-  .social img{
-    padding:40px 20px;
+  #searchbar{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+  
+  button{
+    height:30px ;
+    width: 80px; 
+    color: white;
+    font-size: 14px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
     cursor: pointer;
   }
-  .social img:hover{
-    transform: scale(1.2);
-  
+  button:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(65, 65, 65);
   }
+  
+  .pembuka{
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: rgb(255, 155, 210);
+    text-shadow: -0.5px 0  rgb(9, 92, 92), 0 0.5px  rgb(92, 0, 0), 0.5px 0  rgb(92, 0, 0), 0 -0.5px  rgb(95, 0, 0);
+  }
+
+  .card{
+    display: grid;
+    grid-gap: 650px;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-flow: row;
+    padding-bottom: 10px;
+  }
+  @media only screen and (max-width:800px){
+    .card{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .navigation{
+      float: right;
+      padding: 23px 10px;
+    }
+  }
+  
+  .cards h2{
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .cards h3{
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  .card img{
+    padding: 20px;
+  }
+  .cards{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 5px 10px 8px rgb(255, 255, 255);
+  }
+  .cards:hover{
+    transform: scale(1.02);
+  }
+
+  .cards3{
+    
+    background-color: rgb(255, 155, 135);
+    height: 600px;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin: 50px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.PIM{
+  border-radius: 45%;
+}
+
+footer{
+background: rgb(187, 187, 187);
+}
+
+.social{
+  text-align: center;
+}
+
+.social img{
+  padding:40px 20px;
+  cursor: pointer;
+}
+.social img:hover{
+  transform: scale(1.2);
+
+}
