@@ -44,16 +44,19 @@ html {
   }
 
 .keterangan
-{  font-family: georgia;
+{  display: inline; /* the default for span */
+    width: 800px;
+    height: 300px;
+    padding:;
+    border: 1px solid blue;  
+    background-color: yellow; 
+    font-family: georgia;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
-    top: 255px;
-    right: ;
-    left: 650px;
+    top: 200px;
+    left: 850px;
     color: rgb(0, 0, 0);
-    text-shadow: -0.5px 0  rgb(255, 255, 255), 0 0.5px  rgb(255, 255, 255), 0.5px 0  rgb(255, 255, 255), 0 -0.5px  rgb(255, 255, 255);
-
 }
 
 
